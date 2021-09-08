@@ -27,8 +27,17 @@ def main():
   
   # Get the current time
   t = datetime.time(datetime.now())
+  s = today.time()
   print ("The current time is ", t)
-  
+  print("The current time is type", s)
+  seconds = today.time().second
+  print("seconds", seconds)
+  minutes = today.time().minute
+  print("minutes", minutes)
+  hours = today.time().hour
+  print("hours", hours)
+  microseconds = today.time().microsecond
+  print("microseconds", microseconds)
   
 if __name__ == "__main__":
   main();
