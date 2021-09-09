@@ -9,6 +9,11 @@ c = calendar.TextCalendar(calendar.SUNDAY)
 str = c.formatmonth(2017, 1, 0, 0)
 print (str)
 
+# create a plain text calender for this year
+this = calendar.TextCalendar(calendar.SUNDAY)
+thisstr = this.formatmonth(2021, 9, 0, 0)
+print (thisstr)
+
 # create an HTML formatted calendar
 hc = calendar.HTMLCalendar(calendar.SUNDAY)
 str = hc.formatmonth(2017, 1)
