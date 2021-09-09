@@ -20,6 +20,11 @@ print ("one year from now it will be: " + str(now + timedelta(days=365)))
 # create a timedelta that uses more than one argument
 print ("in two weeks and 3 days it will be: " + str(now + timedelta(weeks=2, days=3)))
 
+# before 3 monthsp
+t3=datetime.now() - timedelta(days=61)
+tf=t3.strftime("%dth day of %B, %Y")
+print("After 3 months:",tf)
+
 # calculate the date 1 week ago, formatted as a string
 t = datetime.now() - timedelta(weeks=1)
 s = t.strftime("%A %B %d, %Y")
@@ -38,4 +43,13 @@ if afd < today:
 # Now calculate the amount of time until April Fool's Day  
 time_to_afd = afd - today
 print ("It's just", time_to_afd.days, "days until next April Fools' Day!")
+
+#work experience
+
+current = date.today()
+joining = date(2017, 1, 25)
+print("joining:", joining)
+print("today:", current)
+exp = current.year - joining.year
+print("experience:", exp)
 
