@@ -47,12 +47,16 @@ for m in range(1,13):
   cal = calendar.monthcalendar(2017, m)
   # The first Friday has to be within the first two weeks
   weekone = cal[0]
+  print("cal[0]:", weekone)
   weektwo = cal[1]
+  print("cal[1]:", weektwo)
    
   if weekone[calendar.FRIDAY] != 0:
+    print('meetday check week1', weekone[calendar.FRIDAY])
     meetday = weekone[calendar.FRIDAY]
   else:
     # if the first friday isn't in the first week, it must be in the second
+    print('meetday check week2', weektwo[calendar.FRIDAY])
     meetday = weektwo[calendar.FRIDAY]
       
   print ("%10s %2d" % (calendar.month_name[m], meetday))
